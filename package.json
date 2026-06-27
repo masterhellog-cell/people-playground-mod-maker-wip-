@@ -1,0 +1,8 @@
+{
+  "name": "ppg-mod-maker",
+  "version": "1.0.0",
+  "description": "People Playground Mod Maker AI",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

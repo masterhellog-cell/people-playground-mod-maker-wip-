@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPG Mod Maker AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>People Playground Mod Maker AI</h1>
+            <p>Generate mods with AI assistance</p>
+        </header>
+        
+        <main>
+            <section class="input-section">
+                <h2>Describe Your Mod</h2>
+                <textarea id="modDescription" placeholder="Tell me what kind of mod you want to create..."></textarea>
+                
+                <div class="button-group">
+                    <button id="generateBtn" class="btn btn-primary">Generate Mod</button>
+                    <button id="downloadBtn" class="btn btn-secondary" disabled>Download Zip</button>
+                </div>
+            </section>
+            
+            <section class="output-section">
+                <h2>Generated Files</h2>
+                <div class="file-preview">
+                    <div class="file-tab active" data-file="script.cs">script.cs</div>
+                    <div class="file-tab" data-file="mod.json">mod.json</div>
+                </div>
+                <div class="code-container">
+                    <pre><code id="codeOutput">// Your generated code will appear here...</code></pre>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
